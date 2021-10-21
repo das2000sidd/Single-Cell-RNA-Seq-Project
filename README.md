@@ -1,1 +1,1 @@
-# Violin plot for mitochindroal and ribosomal content for various tissue types
+# Violin plot for mitochondrial and ribosomal content for various tissue types
