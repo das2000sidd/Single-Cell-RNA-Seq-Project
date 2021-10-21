@@ -32,12 +32,6 @@ SC143_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_
 SC147_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/TX_Recipient_3_doublets.csv",header = F,stringsAsFactors = F)
 SC151_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/PB2_3_doublets.csv",header = F,stringsAsFactors = F)
 
-#SC86_doublet$new_cell_oid=paste(SC86_doublet$V2,"-1",sep="")
-#SC89_doublet$new_cell_oid=paste(SC89_doublet$V2,"-1",sep="")
-#SC108_doublet$new_cell_oid=paste(SC108_doublet$V2,"-1",sep="")
-#SC143_doublet$new_cell_oid=paste(SC143_doublet$V2,"-1",sep="")
-#SC147_doublet$new_cell_oid=paste(SC147_doublet$V2,"-1",sep="")
-#SC151_doublet$new_cell_oid=paste(SC151_doublet$V2,"-1",sep="")
 
 
 library(scDblFinder)
