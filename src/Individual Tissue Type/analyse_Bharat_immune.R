@@ -24,20 +24,6 @@ SC150=readRDS('/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5
 ## SC147 is TX_Recipient_3
 ## SC151 is PB2_3
 
-#SC86_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/Donor1_3_doublets.csv",header = F,stringsAsFactors = F)
-#SC89_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/Donor1_6_doublets.csv",header = F,stringsAsFactors = F)
-#SC108_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/PB1_2_doublets.csv",header = F,stringsAsFactors = F)
-#SC143_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/TX_Donor_3_doublets.csv",header = F,stringsAsFactors = F)
-#SC147_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/TX_Recipient_3_doublets.csv",header = F,stringsAsFactors = F)
-#SC151_doublet=read.csv(file="/projects/b1025/sdi0596/Covid19_Single_Cell_RNASeq_project/all_h5ad_after_filtering/New_Analysis_Using_Bharat_all_cells/PB2_3_doublets.csv",header = F,stringsAsFactors = F)
-
-#SC86_doublet$new_cell_oid=paste(SC86_doublet$V2,"-1",sep="")
-#SC89_doublet$new_cell_oid=paste(SC89_doublet$V2,"-1",sep="")
-#SC108_doublet$new_cell_oid=paste(SC108_doublet$V2,"-1",sep="")
-#SC143_doublet$new_cell_oid=paste(SC143_doublet$V2,"-1",sep="")
-#SC147_doublet$new_cell_oid=paste(SC147_doublet$V2,"-1",sep="")
-#SC151_doublet$new_cell_oid=paste(SC151_doublet$V2,"-1",sep="")
-
 
 library(scDblFinder)
 
@@ -76,13 +62,6 @@ SC146.doublet.info=data.frame(colnames(SC146.sce),SC146.sce$scDblFinder.class)
 SC148.doublet.info=data.frame(colnames(SC148.sce),SC148.sce$scDblFinder.class)
 SC149.doublet.info=data.frame(colnames(SC149.sce),SC149.sce$scDblFinder.class)
 SC150.doublet.info=data.frame(colnames(SC150.sce),SC150.sce$scDblFinder.class)
-
-#SC86.doublet=subset(SC86.doublet.info,SC86.doublet.info$SC86.sce.scDblFinder.class=="doublet")
-#SC89.doublet=subset(SC89.doublet.info,SC89.doublet.info$SC89.sce.scDblFinder.class=="doublet")
-#SC108.doublet=subset(SC108.doublet.info,SC108.doublet.info$SC108.sce.scDblFinder.class=="doublet")
-#SC143.doublet=subset(SC143.doublet.info,SC143.doublet.info$SC143.sce.scDblFinder.class=="doublet")
-#SC147.doublet=subset(SC147.doublet.info,SC147.doublet.info$SC147.sce.scDblFinder.class=="doublet")
-#SC151.doublet=subset(SC151.doublet.info,SC151.doublet.info$SC151.sce.scDblFinder.class=="doublet")
 
 
 rownames(SC84.doublet.info)=SC84.doublet.info$colnames.SC84.sce.
@@ -124,15 +103,6 @@ colnames(SC148@meta.data)[4]="Cell_id"
 colnames(SC149@meta.data)[4]="Cell_id"
 colnames(SC150@meta.data)[4]="Cell_id"
 
-
-SC84@meta.data$Cell_Id=rownames(SC84@meta.data)
-meta.SC84=SC84@meta.data
-test_cell_id=0
-for(index in 1:nrow(meta.SC84)){
-  if(meta.SC84[index,4]==meta.SC84[index,6]){
-    test_cell_id=test_cell_id+1
-  }
-}
 
 
 
