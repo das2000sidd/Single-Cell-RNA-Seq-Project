@@ -1,1 +1,1 @@
-# Single-Cell-RNA-Seq-Project
+# Violin plot for mitochindroal and ribosomal content for various tissue types
