@@ -1,4 +1,4 @@
-This repository holds the code that I used for learning single cell RNA sequencing analysis by aiming reproduce the main findings of the following paper:
+This repository holds the code that I used for learning single cell RNA sequencing analysis by aiming to reproduce the main findings of the following paper:
 
 https://stm.sciencemag.org/content/early/2020/11/25/scitranslmed.abe4282
 
