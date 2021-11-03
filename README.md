@@ -8,3 +8,5 @@ This analysis showed that when postmortem lung tissue from COVID19 patients were
 The Bharat et. al. dataset was analysed individually and then subsequently that dataset was used for latent space analysis of Bharat et. al. and Habermann et. al. datasets.
 
 Paper data used for integration with Bharat data: https://www.science.org/doi/10.1126/sciadv.aba1972?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed
+
+The code used in the 'src' folder.
